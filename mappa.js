@@ -15,6 +15,7 @@ export const createMap = () =>{
                     name: element,
                     coords: [data[0].lat, data[0].lon]
                 }
+                map.setView(dato.coords, zoom);
                 places.push(dato);
                 console.log(places);
                 Map.render()
